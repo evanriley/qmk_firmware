@@ -1,14 +1,6 @@
-# smt's TV44 keymap
+# evan's TV44 keymap
 
-This keymap is based on a combination of my Planck keymap and [jeebak's TV44 layout](https://github.com/qmk/qmk_firmware/tree/master/keyboards/tv44/keymaps/jeebak). I removed the macros and TouchCursor/MouseCursor layers, because I'm just not ready for that level of mind-mapping.
-
-I had been using something close to the default Minivan layout, but after spending a bit of time with the Planck and Preonic, I decided it would be better for me to try to standardize to some degree, where possible.
-
-Also, it's worth noting that my Minivan is one with the "arrows" layout, which has a 45th key. In spite of this, the 45-key Minivan is still technically considered a "TV44" as far as I know.
-
-![smt's TV44 keymap](https://i.imgur.com/Y4n6eHj.png)
-
-## Notable features (most of which can be found in my or jeebak's respective keymap file):
+## Notable features:
 
 1. **Shift/Enter**
 
@@ -41,9 +33,9 @@ Also, it's worth noting that my Minivan is one with the "arrows" layout, which h
 ,---------+------+------+------+------+------+------+------+------+------+------+---------.
 |Hyper/Tab|   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  |  Bksp   |
 |---------`------`------`------`------`------`------`------`------`------`------`---------|
-| Ctrl/Esc |   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   ;  |   '    |
+| Ctrl/Esc |   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   ;  |  Enter |
 |----------`------`------`------`------`------`------`------`------`------`------`--------|
-|   Shift   |   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Sft/Ent|
+|   Shift   |   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  | Shift |
 |-----------`------`------`------`------`-----'-------`------`------`------`------`-------|
 |  Alt/` |   GUI   |  Lower |    Space     |    Space     |  Raise  | GUI  | Alt  | Ctrl  |
  `-------+---------+--------+-----^^^------+-----^^^------+---------+------+------+-------'
@@ -89,7 +81,7 @@ This is where I put the number row, two numpad clusters, common arithmetic opera
 |----------`------`------`------`------`------`------`------`------`------`------`--------|
 |   =       |   7  |   8  |   9  |   0  |   -  |   /  |   1  |   2  |   3  |  Up  |PageDn |
 |-----------`------`------`------`------`-----'-------`------`------`------`------`-------|
-|  Brite |         |        |    Home      |     End      |         | Left | Down | Right |
+|    '   |         |        |    Home      |     End      |         | Left | Down | Right |
  `-------+---------+--------+-----^^^------+-----^^^------+---------+------+------+-------'
 ```
 
@@ -105,7 +97,7 @@ As a developer, it makes the most sense for me to group all the commonly-used sy
 |----------`------`------`------`------`------`------`------`------`------`------`--------|
 |   F7      |  F8  |  F9  |  F10 |  F11 |  F12 |   -  |   /  |   =  |   [  |   ]  |   \   |
 |-----------`------`------`------`------`-----'-------`------`------`------`------`-------|
-|  Brite |         |        |     Play     |     Next     |         | Mute | Vol- | Vol+  |
+|  '     |         |        |     Play     |     Next     |         | Mute | Vol- | Vol+  |
  `-------+---------+--------+-----^^^------+-----^^^------+---------+------+------+-------'
 ```
 
