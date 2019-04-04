@@ -5,6 +5,6 @@
 
 // place overrides here
 #undef TAPPING_TERM
-#define TAPPING_TERM 350
+#define TAPPING_TERM 200
 
 #endif
