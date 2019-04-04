@@ -31,6 +31,7 @@ enum planck_keycodes {
 #define CTL_TAB		CTL_T(KC_TAB)				// Tap for Tab, hold for Ctrl
 #define HPR_ESC		ALL_T(KC_ESC)				// Tap for Esc, hold for Hyper (Super+Ctrl+Alt+Shift)
 
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Qwerty
@@ -42,18 +43,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |----------`------`------`------`------`------`------`------`------`------`------`--------|
  * |   Shift   |   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Shift  |
  * |-----------`------`------`------`------`-----'-------`------`------`------`------`-------|
- * |  Alt/` |   GUI   |  Lower |    Space     |    Space     |  Raise  | GUI  | Alt  | Ctrl  |
+ * |  Ctrl |   GUI   |  Alt/` |    Space/LOWER     |    Space/RAISE     |  .  | GUI  | Alt  | Ctrl  |
  *  `-------+---------+--------+-----^^^------+-----^^^------+---------+------+------+-------'
  */
 [_QWERTY] = LAYOUT_arrow(
 /*,--------+-------+--------+--------+--------+--------+--------+--------+--------+--------+--------+-----------------.*/
     HPR_ESC,   KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC      ,
 /*|--------`-------`--------`--------`--------`--------`--------`--------`--------`--------`--------`-----------------|*/
-    CTL_TAB ,   KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN,    KC_ENT    ,
+    KC_TAB ,   KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN,    KC_ENT    ,
 /*|---------`-------`--------`--------`--------`--------`--------`--------`--------`--------`--------`----------------|*/
     KC_LSFT  ,   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,    KC_RSHIFT  ,
 /*|----------`-------`--------`--------`--------`--------`--------`--------`--------`--------`--------`---------------|*/
-    ALT_GRV ,   KC_LGUI     ,   LOWER ,     KC_SPC     ,     KC_SPC      ,  RAISE  ,  KC_RGUI, KC_RALT,     KC_RCTL   ),
+    KC_LCTL ,   ALT_GRV     ,  KC_LGUI  ,     LT(LOWER, KC_SPC)     ,     LT(RAISE, KC_SPC)      ,  KC_DOT  ,  KC_RGUI, KC_RALT,     KC_RCTL   ),
 /*`---------+---------------+---------+-------^^^------+-------^^^-------+----------+--------+--------+--------------'*/
 
 /* Colemak
