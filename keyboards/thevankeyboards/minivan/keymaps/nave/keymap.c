@@ -2,6 +2,7 @@
 
 extern keymap_config_t keymap_config;
 
+
 #define _BL 0
 #define _UP 1
 #define _DN 2
@@ -13,8 +14,10 @@ extern keymap_config_t keymap_config;
 
 #define CTL_ESC CTL_T(KC_ESC)
 
+
 #define RAISE LT(_UP, KC_SPC)
 #define LOWER LT(_DN, KC_SPC)
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	
@@ -127,6 +130,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	XXXXXXX, _______, _______, KC_SPC,  KC_P0,   KC_PDOT, _______, _______, _______)
 };
 
-const uint16_t PROGMEM fn_actions[] = {
-
-};

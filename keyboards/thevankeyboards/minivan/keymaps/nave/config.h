@@ -1,14 +1,7 @@
-#ifndef CONFIG_USER_H
-#define CONFIG_USER_H
+#pragma once
 
-#include "../../config.h"
+//place overrides here/
+#undef TAPPING_TERM
+#define TAPPING_TERM 175
 
-// place overrides here
-
-#define RETRO_TAPPING
-
-
-
-
-
-#endif
+#define PERMISSIVE_HOLD
