@@ -1,4 +1,9 @@
 {
+    "name": "Wonderland",
+    "vendorId": "0x5782",
+    "productId": "0xA71C",
+    "lighting": "qmk_rgblight",
+    "matrix": {"rows": 5, "cols": 15},
     "keyboard_name": "Maartenwut Wonderland",
     "url": "",
     "maintainer": "Maartenwut",

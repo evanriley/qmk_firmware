@@ -20,12 +20,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0x5892 // wonderland pcb
-#define PRODUCT_ID      0x0004
+#define VENDOR_ID       0x4705
+#define PRODUCT_ID      0xA71C
 #define DEVICE_VER      0x0003
 #define MANUFACTURER    Maartenwut
 #define PRODUCT         Wonderland
 #define DESCRIPTION     "QMK Firmware for the Wonderland"
+
+/* Required settings to use lto and keep file size low 
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
+*/
 
 /* key matrix size */
 #define MATRIX_ROWS 5
@@ -53,3 +58,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define QMK_ESC_OUTPUT F0 // usually COL
 #define QMK_ESC_INPUT B0 // usually ROW
 #define QMK_LED B1
+
+#ifndef NO_DEBUG
+#define NO_DEBUG
+#endif // !NO_DEBUG
+#if !defined(NO_PRINT) && !defined(CONSOLE_ENABLE)
+#define NO_PRINT
+#endif // !NO_PRINT

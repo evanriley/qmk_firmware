@@ -27,4 +27,5 @@ AUDIO_ENABLE = no
 UNICODE_ENABLE = no 		# Unicode
 BLUETOOTH_ENABLE = no # Enable Bluetooth with the Adafruit EZ-Key HID
 AUTO_SHIFT_ENABLE = no
-VELOCIKEY_ENABLE = yes
+VELOCIKEY_ENABLE = no
+VIA_ENABLE = yes
